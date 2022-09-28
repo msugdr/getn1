@@ -1,6 +1,6 @@
 const http = require('http');
 const http = require('request');
-const url='http://chodoin.deci.jp/getqloli.cgi?LOVE';
+const url="http://chodoin.deci.jp/getqloli.cgi?LOVE";
 const msg ="I Love Youna and Elena! Are You Happy?";
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
