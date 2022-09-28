@@ -1,6 +1,6 @@
 const http = require('http');
-const http = require('request');
-const msg ="I Love Youna and Elena! Are You Happy??";
+const request = require('request');
+const msg ="Dear You, I Love Youna and Elena! Are You Happy?";
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.end(msg);
