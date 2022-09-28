@@ -1,8 +1,8 @@
 const http = require('http');
-
+const msg ="I Love Youna and Elena!";
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("I Love Youna and Elena!");
+    response.end(msg);
 });
 
 const port = process.env.PORT || 1337;
