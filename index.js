@@ -1,10 +1,10 @@
 const http = require('http');
 var msg;
 const server = http.createServer((request, response) => {
+    msg = " URI = " + request.url;
     response.writeHead(200, {"Content-Type": "text/plain"});
-msg = " URI : " + request.url;
     response.write(msg);
-    response.end(msg);
+    response.end();
 });
 
 const port = process.env.PORT || 1337;
