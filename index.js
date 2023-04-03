@@ -2,7 +2,7 @@ const http = require('http');
 var msg;
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
-msg = "MSG : " + request.url;
+msg = " : " + request.url;
     response.end(msg);
 });
 
