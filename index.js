@@ -1,8 +1,8 @@
 const http = require('http');
 var msg;
 const server = http.createServer((request, response) => {
-    msg = " URI = " + request.url + " \nprocess.env.PORT = " + process.env.PORT;
-    response.writeHead(200, {"Content-Type": "text/plain"});
+    msg = "<h1>ELENA</h1> URI = " + request.url + "<br>process.env.PORT = " + process.env.PORT;
+    response.writeHead(200, {"Content-Type": "text/html"});
     response.write(msg);
     response.end();
 });
