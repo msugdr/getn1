@@ -1,7 +1,7 @@
 const http = require('http');
 var msg;
 const server = http.createServer((request, response) => {
-    msg = " URI = " + request.url;
+    msg = " URI = " + request.url + " port = " + process.env.PORT;
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.write(msg);
     response.end();
