@@ -2,7 +2,7 @@ const http = require('http');
 const port = process.env.PORT || 1337;
 var msg;
 const server = http.createServer((request, response) => {
-    msg = `<h1 style='color:red;'>ELENA</h1><img src='https://sugimoto-re.com/src/logo.png'><br> URI = ` + request.url + "<br>process.env.PORT = " + process.env.PORT;
+    msg = `<h1 style='color:red;'>ELENA</h1><img src='girl_evergarten.jpg'><br> URI = ` + request.url + "<br>process.env.PORT = " + process.env.PORT;
     response.writeHead(200, {"Content-Type": "text/html"});
     response.write(msg);
     response.end();
